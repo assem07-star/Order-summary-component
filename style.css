@@ -1,0 +1,139 @@
+/* General Style */
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+:root{
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+    
+}
+body{
+    font-family: 'Red Hat Display', sans-serif;
+    
+    background-image: url(/images/pattern-background-desktop.svg);
+    /* background-position: center center; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: var(--pale-blue);
+}
+.container{
+    width: 450px;
+    margin: 50px auto;
+    text-align: center;
+    padding: 0 25px;
+}
+img{
+    /* width: 100%; */
+
+}
+h1{
+    color: var(--bright-blue);
+}
+/* Card Component */
+.card{
+    background-color: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.card  .images img{
+    width: 100%;
+
+}
+.outline{
+    padding: 30px 60px;
+}
+.info{
+    margin: 0 0 15px;
+    
+}
+.info h2{
+    color: var(--dark-blue);
+    font-weight: 900;
+    margin-top: 0;
+}
+/* .info p{
+    
+} */
+.annual-plan{ 
+    display: flex;
+    padding: 0 15px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--very-pale-blue);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    
+}
+.annual-plan img{
+    width: 40px;
+}
+.annual-plan .price{
+    margin-left: -50px;
+}
+
+.annual-plan .price h5{
+    font-weight: 900;
+    color: var(--dark-blue);
+    margin-bottom: 0;
+
+}
+.annual-plan .price p{
+    margin-top: 5px;
+}
+.annual-plan a{
+    transition: .2s ease-in-out;
+}
+.annual-plan a:hover{
+    text-decoration: none;
+}
+/* .buttons{} */
+.buttons .order{
+    display: block;
+    width: 100%;
+    border: 0;
+    background: var(--bright-blue);
+    padding: 10px 15px;
+    border-radius: 10px;
+    color: var(--very-pale-blue);
+    font-weight: 700;
+    text-align: center;
+    box-shadow: 0px 17px 12px 3px var(--pale-blue);
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+.buttons .order:hover{
+    opacity: .7;
+}
+.buttons .order:active{
+border: none;    
+}
+.buttons .cancel{
+    display: block;
+    text-align: center;
+    width: 100%;
+    padding: 10px 15px;
+    background: none;
+    border: none;
+    font-weight: 900;
+    cursor: pointer;
+    color: var(--desaturated-blue);
+    transition: .2s ease-in-out;
+}
+.buttons .cancel:hover{
+    color: var(--dark-blue);
+    /* font-weight: 900; */
+}
+/* Repeated Styles */
+p{
+    font-size: 14px;
+    color: var(--desaturated-blue);
+    line-height: 1.5;
+    
+    
+}
